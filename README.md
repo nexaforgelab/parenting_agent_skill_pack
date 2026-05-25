@@ -2,6 +2,8 @@
 
 本包根据用户提供的 50 个育儿 Agent 清单生成。每个 Skill 独立成文件夹，包含 `SKILL.md`、manifest、schema、Python 执行骨架、示例输入和测试。
 
+详细的中英文使用、测试、集成指南见 [docs/GUIDE_ZH_EN.md](docs/GUIDE_ZH_EN.md)。
+
 ## 目录结构
 
 ```text
