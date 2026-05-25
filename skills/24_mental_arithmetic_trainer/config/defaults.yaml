@@ -1,0 +1,24 @@
+skill_id: "mental_arithmetic_trainer"
+name: "小学口算训练 Agent"
+category: "小学学习陪伴"
+language: "zh-CN"
+defaults:
+  history_days: 7
+  review_cycle: "weekly"
+  privacy_mode: "family_local_first"
+  max_daily_actions: 5
+  tone: "温和、具体、低焦虑"
+risk_flags:
+  - "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。"
+  - "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。"
+  - "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+deliverables:
+  - "每日口算卷"
+  - "错题统计"
+  - "速度曲线"
+workflow_modes:
+  - "记录模式"
+  - "规划模式"
+  - "陪跑模式"
+  - "复盘模式"
+  - "沟通摘要模式"

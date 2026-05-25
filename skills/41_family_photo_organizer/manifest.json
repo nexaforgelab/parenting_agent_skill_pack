@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "family_photo_organizer",
+  "skill_index": 41,
+  "name": "家庭照片整理 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子照片越来越多，手机相册混乱。",
+  "long_chain_summary": [
+    "读取照片文件夹",
+    "按时间、人物、场景分类",
+    "识别生日、旅行、节日",
+    "自动生成成长相册",
+    "输出年度回忆"
+  ],
+  "deliverables": [
+    "分类相册",
+    "成长时间线",
+    "年度照片书文案"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

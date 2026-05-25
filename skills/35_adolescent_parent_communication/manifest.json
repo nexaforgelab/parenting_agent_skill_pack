@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "adolescent_parent_communication",
+  "skill_index": 35,
+  "name": "青春期亲子沟通 Agent",
+  "category": "家长沟通与升学规划",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子进入青春期，不愿沟通、容易顶嘴。",
+  "long_chain_summary": [
+    "输入具体事件",
+    "判断沟通误区",
+    "生成低冲突表达",
+    "设计 10 分钟沟通流程",
+    "记录孩子反馈"
+  ],
+  "deliverables": [
+    "亲子沟通脚本",
+    "禁用话术",
+    "有效表达库"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "家长沟通与升学规划",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

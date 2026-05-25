@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "weekend_family_activity",
+  "skill_index": 40,
+  "name": "周末亲子活动 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "周末不知道带孩子去哪、玩什么。",
+  "long_chain_summary": [
+    "输入城市、天气、孩子年龄、预算",
+    "推荐室内/户外活动",
+    "生成半日/一日计划",
+    "准备物品清单",
+    "记录活动体验"
+  ],
+  "deliverables": [
+    "周末活动方案",
+    "准备清单",
+    "照片记录模板"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

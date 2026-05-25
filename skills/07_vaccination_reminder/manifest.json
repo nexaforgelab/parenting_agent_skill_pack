@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "vaccination_reminder",
+  "skill_index": 7,
+  "name": "疫苗接种提醒 Agent",
+  "category": "婴幼儿照护与健康记录",
+  "risk_profile": "health_adjacent",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "宝宝疫苗时间多，容易忘记。",
+  "long_chain_summary": [
+    "输入出生日期和已接种记录",
+    "生成疫苗时间表",
+    "到期提醒",
+    "记录接种信息",
+    "自动生成接种档案"
+  ],
+  "deliverables": [
+    "疫苗日历",
+    "接种记录",
+    "下次提醒"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做家庭记录、观察整理、提醒和沟通材料准备，不提供诊断、治疗方案或用药建议。",
+    "出现呼吸困难、持续高热、严重过敏反应、精神状态异常、脱水、剧烈呕吐/腹泻、外伤等情况时，必须提示立即联系医生或急救。",
+    "所有月龄、疫苗、营养、睡眠建议都应标注为一般性参考，并要求家长以当地儿科医生/公卫机构建议为准。"
+  ],
+  "tags": [
+    "婴幼儿照护与健康记录",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

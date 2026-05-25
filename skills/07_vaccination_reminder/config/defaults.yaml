@@ -1,0 +1,24 @@
+skill_id: "vaccination_reminder"
+name: "疫苗接种提醒 Agent"
+category: "婴幼儿照护与健康记录"
+language: "zh-CN"
+defaults:
+  history_days: 7
+  review_cycle: "weekly"
+  privacy_mode: "family_local_first"
+  max_daily_actions: 5
+  tone: "温和、具体、低焦虑"
+risk_flags:
+  - "本 Skill 只做家庭记录、观察整理、提醒和沟通材料准备，不提供诊断、治疗方案或用药建议。"
+  - "出现呼吸困难、持续高热、严重过敏反应、精神状态异常、脱水、剧烈呕吐/腹泻、外伤等情况时，必须提示立即联系医生或急救。"
+  - "所有月龄、疫苗、营养、睡眠建议都应标注为一般性参考，并要求家长以当地儿科医生/公卫机构建议为准。"
+deliverables:
+  - "疫苗日历"
+  - "接种记录"
+  - "下次提醒"
+workflow_modes:
+  - "记录模式"
+  - "规划模式"
+  - "陪跑模式"
+  - "复盘模式"
+  - "沟通摘要模式"

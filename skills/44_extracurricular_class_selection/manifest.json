@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "extracurricular_class_selection",
+  "skill_index": 44,
+  "name": "兴趣班选择 Agent",
+  "category": "择校消费与家庭财务",
+  "risk_profile": "consumer_decision",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母不知道孩子适合学钢琴、画画、编程、运动还是英语。",
+  "long_chain_summary": [
+    "输入年龄、性格、兴趣、时间、预算",
+    "分析适配方向",
+    "对比课程成本和收益",
+    "生成试听观察表",
+    "记录试听反馈"
+  ],
+  "deliverables": [
+    "兴趣班推荐",
+    "试听清单",
+    "决策评分表"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做信息整理、对比和风险提示，不替家长做最终消费决定。",
+    "涉及价格、招生名额、合同条款、机构资质、口碑等信息时，应要求人工核验最新资料。",
+    "输出应区分事实、推断、主观偏好和待核验项，避免夸大承诺。"
+  ],
+  "tags": [
+    "择校消费与家庭财务",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

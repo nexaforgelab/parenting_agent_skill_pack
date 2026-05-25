@@ -1,0 +1,24 @@
+skill_id: "toddler_emotion_labeling"
+name: "幼儿情绪识别 Agent"
+category: "启蒙教育、行为习惯与安全"
+language: "zh-CN"
+defaults:
+  history_days: 7
+  review_cycle: "weekly"
+  privacy_mode: "family_local_first"
+  max_daily_actions: 5
+  tone: "温和、具体、低焦虑"
+risk_flags:
+  - "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。"
+  - "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。"
+  - "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+deliverables:
+  - "情绪记录"
+  - "安抚话术"
+  - "亲子沟通建议"
+workflow_modes:
+  - "记录模式"
+  - "规划模式"
+  - "陪跑模式"
+  - "复盘模式"
+  - "沟通摘要模式"

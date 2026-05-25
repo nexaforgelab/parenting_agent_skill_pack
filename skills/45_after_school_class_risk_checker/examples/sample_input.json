@@ -1,0 +1,32 @@
+{
+  "child_profile": {
+    "age": 6,
+    "nickname": "孩子"
+  },
+  "family_context": {
+    "caregiver": "父母",
+    "available_time": "周末有空",
+    "budget": "2-5千/月",
+    "notes": "示例上下文"
+  },
+  "current_problem": "想给孩子报课外班，想了解如何避坑。",
+  "goal": "生成可执行计划、风险评估报告和避坑清单",
+  "preferences": {
+    "budget_range": "2-5千/月",
+    "institution_type": ["连锁机构", "口碑机构"]
+  },
+  "classes": [
+    {
+      "name": "示例课外班A",
+      "institution": "示例机构",
+      "tuition": 24000,
+      "years_in_business": 5,
+      "accreditation": ["办学许可"],
+      "refund_policy": "支持退款",
+      "contract_required": true,
+      "teacher_qualification": "有教师资格证"
+    }
+  ],
+  "history_days": 30,
+  "privacy_mode": "family_local_first"
+}

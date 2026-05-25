@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "primary_math_word_problem",
+  "skill_index": 23,
+  "name": "小学数学应用题 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子应用题不会审题。",
+  "long_chain_summary": [
+    "拍照识别题目",
+    "提取已知条件和问题",
+    "画数量关系",
+    "分步引导孩子思考",
+    "生成同类题"
+  ],
+  "deliverables": [
+    "解题步骤",
+    "数量关系图",
+    "变式题"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

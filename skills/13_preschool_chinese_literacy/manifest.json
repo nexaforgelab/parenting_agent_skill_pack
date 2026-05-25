@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "preschool_chinese_literacy",
+  "skill_index": 13,
+  "name": "幼儿识字启蒙 Agent",
+  "category": "启蒙教育、行为习惯与安全",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子 3-6 岁开始识字，但不适合死记硬背。",
+  "long_chain_summary": [
+    "设定识字目标",
+    "每天推送 5 个字",
+    "结合图片、故事、生活场景",
+    "生成小游戏",
+    "定期复习"
+  ],
+  "deliverables": [
+    "每日识字卡",
+    "复习计划",
+    "掌握度报告"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "启蒙教育、行为习惯与安全",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

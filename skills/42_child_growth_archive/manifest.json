@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "child_growth_archive",
+  "skill_index": 42,
+  "name": "儿童成长档案 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母想系统记录孩子成长，但资料散落在相册、日记、体检单里。",
+  "long_chain_summary": [
+    "汇总照片、体检、学习记录、趣事",
+    "按年龄阶段整理",
+    "生成成长时间线",
+    "输出月度/年度成长报告"
+  ],
+  "deliverables": [
+    "成长档案",
+    "年度报告",
+    "纪念册文案"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

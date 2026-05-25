@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "toddler_emotion_labeling",
+  "skill_index": 18,
+  "name": "幼儿情绪识别 Agent",
+  "category": "启蒙教育、行为习惯与安全",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子哭闹、发脾气，父母不知道怎么回应。",
+  "long_chain_summary": [
+    "输入事件经过",
+    "Agent 判断可能情绪：委屈、害怕、挫败、疲惫",
+    "给出父母回应话术",
+    "记录效果",
+    "形成孩子情绪档案"
+  ],
+  "deliverables": [
+    "情绪记录",
+    "安抚话术",
+    "亲子沟通建议"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "启蒙教育、行为习惯与安全",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

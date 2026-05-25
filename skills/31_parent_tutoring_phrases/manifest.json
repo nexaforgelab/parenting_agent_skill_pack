@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "parent_tutoring_phrases",
+  "skill_index": 31,
+  "name": "家长辅导话术 Agent",
+  "category": "家长沟通与升学规划",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母辅导作业时容易情绪失控。",
+  "long_chain_summary": [
+    "输入孩子问题场景",
+    "判断孩子可能卡点",
+    "生成温和引导话术",
+    "给出错误示范和正确示范",
+    "记录有效话术"
+  ],
+  "deliverables": [
+    "辅导话术",
+    "提问模板",
+    "亲子沟通建议"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "家长沟通与升学规划",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

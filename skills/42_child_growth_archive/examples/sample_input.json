@@ -1,0 +1,31 @@
+{
+  "child_profile": {
+    "age": 3,
+    "nickname": "孩子"
+  },
+  "family_context": {
+    "caregiver": "父母",
+    "available_time": "每天10-20分钟",
+    "notes": "示例上下文"
+  },
+  "current_problem": "孩子成长记录不完整，想建立成长档案。",
+  "goal": "生成可执行计划、记录表和一周复盘字段",
+  "raw_records": [
+    {
+      "record_id": "growth_20240115_001",
+      "record_date": "2024-01-15",
+      "title": "示例事件",
+      "category": "milestone",
+      "record_type": "physical",
+      "description": "示例描述",
+      "tags": ["里程碑", "日常观察"],
+      "importance": "normal"
+    }
+  ],
+  "preferences": {
+    "tone": "温和",
+    "budget": "低成本优先"
+  },
+  "history_days": 7,
+  "privacy_mode": "family_local_first"
+}

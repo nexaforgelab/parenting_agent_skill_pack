@@ -1,0 +1,406 @@
+{
+  "registry_type": "hermes_tool_registry",
+  "version": "0.1.0",
+  "tools": [
+    {
+      "name": "newborn_feeding_tracker",
+      "description": "新生儿喂养记录 Agent",
+      "skill_folder": "skills/01_newborn_feeding_tracker",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/01_newborn_feeding_tracker/schemas/input.schema.json",
+      "output_schema": "skills/01_newborn_feeding_tracker/schemas/output.schema.json"
+    },
+    {
+      "name": "baby_routine_builder",
+      "description": "宝宝作息规律培养 Agent",
+      "skill_folder": "skills/02_baby_routine_builder",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/02_baby_routine_builder/schemas/input.schema.json",
+      "output_schema": "skills/02_baby_routine_builder/schemas/output.schema.json"
+    },
+    {
+      "name": "baby_sleep_coach",
+      "description": "宝宝睡眠陪跑 Agent",
+      "skill_folder": "skills/03_baby_sleep_coach",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/03_baby_sleep_coach/schemas/input.schema.json",
+      "output_schema": "skills/03_baby_sleep_coach/schemas/output.schema.json"
+    },
+    {
+      "name": "solid_food_planner",
+      "description": "辅食添加规划 Agent",
+      "skill_folder": "skills/04_solid_food_planner",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/04_solid_food_planner/schemas/input.schema.json",
+      "output_schema": "skills/04_solid_food_planner/schemas/output.schema.json"
+    },
+    {
+      "name": "baby_allergy_food_log",
+      "description": "宝宝过敏食材记录 Agent",
+      "skill_folder": "skills/05_baby_allergy_food_log",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/05_baby_allergy_food_log/schemas/input.schema.json",
+      "output_schema": "skills/05_baby_allergy_food_log/schemas/output.schema.json"
+    },
+    {
+      "name": "development_milestone_tracker",
+      "description": "月龄发育里程碑 Agent",
+      "skill_folder": "skills/06_development_milestone_tracker",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/06_development_milestone_tracker/schemas/input.schema.json",
+      "output_schema": "skills/06_development_milestone_tracker/schemas/output.schema.json"
+    },
+    {
+      "name": "vaccination_reminder",
+      "description": "疫苗接种提醒 Agent",
+      "skill_folder": "skills/07_vaccination_reminder",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/07_vaccination_reminder/schemas/input.schema.json",
+      "output_schema": "skills/07_vaccination_reminder/schemas/output.schema.json"
+    },
+    {
+      "name": "well_child_checkup_manager",
+      "description": "宝宝体检记录管理 Agent",
+      "skill_folder": "skills/08_well_child_checkup_manager",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/08_well_child_checkup_manager/schemas/input.schema.json",
+      "output_schema": "skills/08_well_child_checkup_manager/schemas/output.schema.json"
+    },
+    {
+      "name": "baby_crying_troubleshooter",
+      "description": "宝宝哭闹原因排查 Agent",
+      "skill_folder": "skills/09_baby_crying_troubleshooter",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/09_baby_crying_troubleshooter/schemas/input.schema.json",
+      "output_schema": "skills/09_baby_crying_troubleshooter/schemas/output.schema.json"
+    },
+    {
+      "name": "diaper_formula_inventory",
+      "description": "尿布奶粉库存 Agent",
+      "skill_folder": "skills/10_diaper_formula_inventory",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/10_diaper_formula_inventory/schemas/input.schema.json",
+      "output_schema": "skills/10_diaper_formula_inventory/schemas/output.schema.json"
+    },
+    {
+      "name": "picture_book_reading",
+      "description": "绘本共读 Agent",
+      "skill_folder": "skills/11_picture_book_reading",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/11_picture_book_reading/schemas/input.schema.json",
+      "output_schema": "skills/11_picture_book_reading/schemas/output.schema.json"
+    },
+    {
+      "name": "bedtime_story_generator",
+      "description": "睡前故事生成 Agent",
+      "skill_folder": "skills/12_bedtime_story_generator",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/12_bedtime_story_generator/schemas/input.schema.json",
+      "output_schema": "skills/12_bedtime_story_generator/schemas/output.schema.json"
+    },
+    {
+      "name": "preschool_chinese_literacy",
+      "description": "幼儿识字启蒙 Agent",
+      "skill_folder": "skills/13_preschool_chinese_literacy",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/13_preschool_chinese_literacy/schemas/input.schema.json",
+      "output_schema": "skills/13_preschool_chinese_literacy/schemas/output.schema.json"
+    },
+    {
+      "name": "pinyin_phonics_starter",
+      "description": "拼音启蒙 Agent",
+      "skill_folder": "skills/14_pinyin_phonics_starter",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/14_pinyin_phonics_starter/schemas/input.schema.json",
+      "output_schema": "skills/14_pinyin_phonics_starter/schemas/output.schema.json"
+    },
+    {
+      "name": "preschool_english_starter",
+      "description": "幼儿英语启蒙 Agent",
+      "skill_folder": "skills/15_preschool_english_starter",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/15_preschool_english_starter/schemas/input.schema.json",
+      "output_schema": "skills/15_preschool_english_starter/schemas/output.schema.json"
+    },
+    {
+      "name": "preschool_math_sense",
+      "description": "幼儿数学启蒙 Agent",
+      "skill_folder": "skills/16_preschool_math_sense",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/16_preschool_math_sense/schemas/input.schema.json",
+      "output_schema": "skills/16_preschool_math_sense/schemas/output.schema.json"
+    },
+    {
+      "name": "focus_training",
+      "description": "专注力训练 Agent",
+      "skill_folder": "skills/17_focus_training",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/17_focus_training/schemas/input.schema.json",
+      "output_schema": "skills/17_focus_training/schemas/output.schema.json"
+    },
+    {
+      "name": "toddler_emotion_labeling",
+      "description": "幼儿情绪识别 Agent",
+      "skill_folder": "skills/18_toddler_emotion_labeling",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/18_toddler_emotion_labeling/schemas/input.schema.json",
+      "output_schema": "skills/18_toddler_emotion_labeling/schemas/output.schema.json"
+    },
+    {
+      "name": "habit_builder",
+      "description": "幼儿习惯养成 Agent",
+      "skill_folder": "skills/19_habit_builder",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/19_habit_builder/schemas/input.schema.json",
+      "output_schema": "skills/19_habit_builder/schemas/output.schema.json"
+    },
+    {
+      "name": "child_safety_education",
+      "description": "儿童安全教育 Agent",
+      "skill_folder": "skills/20_child_safety_education",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/20_child_safety_education/schemas/input.schema.json",
+      "output_schema": "skills/20_child_safety_education/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_homework_companion",
+      "description": "小学作业陪伴 Agent",
+      "skill_folder": "skills/21_primary_homework_companion",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/21_primary_homework_companion/schemas/input.schema.json",
+      "output_schema": "skills/21_primary_homework_companion/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_mistake_notebook",
+      "description": "小学错题本 Agent",
+      "skill_folder": "skills/22_primary_mistake_notebook",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/22_primary_mistake_notebook/schemas/input.schema.json",
+      "output_schema": "skills/22_primary_mistake_notebook/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_math_word_problem",
+      "description": "小学数学应用题 Agent",
+      "skill_folder": "skills/23_primary_math_word_problem",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/23_primary_math_word_problem/schemas/input.schema.json",
+      "output_schema": "skills/23_primary_math_word_problem/schemas/output.schema.json"
+    },
+    {
+      "name": "mental_arithmetic_trainer",
+      "description": "小学口算训练 Agent",
+      "skill_folder": "skills/24_mental_arithmetic_trainer",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/24_mental_arithmetic_trainer/schemas/input.schema.json",
+      "output_schema": "skills/24_mental_arithmetic_trainer/schemas/output.schema.json"
+    },
+    {
+      "name": "picture_writing_coach",
+      "description": "小学看图写话 Agent",
+      "skill_folder": "skills/25_picture_writing_coach",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/25_picture_writing_coach/schemas/input.schema.json",
+      "output_schema": "skills/25_picture_writing_coach/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_composition_coach",
+      "description": "小学作文陪练 Agent",
+      "skill_folder": "skills/26_primary_composition_coach",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/26_primary_composition_coach/schemas/input.schema.json",
+      "output_schema": "skills/26_primary_composition_coach/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_chinese_reading_comprehension",
+      "description": "小学语文阅读理解 Agent",
+      "skill_folder": "skills/27_primary_chinese_reading_comprehension",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/27_primary_chinese_reading_comprehension/schemas/input.schema.json",
+      "output_schema": "skills/27_primary_chinese_reading_comprehension/schemas/output.schema.json"
+    },
+    {
+      "name": "classical_poem_recitation_checker",
+      "description": "古诗背诵检查 Agent",
+      "skill_folder": "skills/28_classical_poem_recitation_checker",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/28_classical_poem_recitation_checker/schemas/input.schema.json",
+      "output_schema": "skills/28_classical_poem_recitation_checker/schemas/output.schema.json"
+    },
+    {
+      "name": "primary_english_vocabulary",
+      "description": "小学英语单词 Agent",
+      "skill_folder": "skills/29_primary_english_vocabulary",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/29_primary_english_vocabulary/schemas/input.schema.json",
+      "output_schema": "skills/29_primary_english_vocabulary/schemas/output.schema.json"
+    },
+    {
+      "name": "student_reading_plan",
+      "description": "小学生阅读计划 Agent",
+      "skill_folder": "skills/30_student_reading_plan",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/30_student_reading_plan/schemas/input.schema.json",
+      "output_schema": "skills/30_student_reading_plan/schemas/output.schema.json"
+    },
+    {
+      "name": "parent_tutoring_phrases",
+      "description": "家长辅导话术 Agent",
+      "skill_folder": "skills/31_parent_tutoring_phrases",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/31_parent_tutoring_phrases/schemas/input.schema.json",
+      "output_schema": "skills/31_parent_tutoring_phrases/schemas/output.schema.json"
+    },
+    {
+      "name": "parent_child_conflict_review",
+      "description": "亲子冲突复盘 Agent",
+      "skill_folder": "skills/32_parent_child_conflict_review",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/32_parent_child_conflict_review/schemas/input.schema.json",
+      "output_schema": "skills/32_parent_child_conflict_review/schemas/output.schema.json"
+    },
+    {
+      "name": "screen_time_management",
+      "description": "手机使用管理 Agent",
+      "skill_folder": "skills/33_screen_time_management",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/33_screen_time_management/schemas/input.schema.json",
+      "output_schema": "skills/33_screen_time_management/schemas/output.schema.json"
+    },
+    {
+      "name": "middle_school_exam_goal_breakdown",
+      "description": "中考目标拆解 Agent",
+      "skill_folder": "skills/34_middle_school_exam_goal_breakdown",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/34_middle_school_exam_goal_breakdown/schemas/input.schema.json",
+      "output_schema": "skills/34_middle_school_exam_goal_breakdown/schemas/output.schema.json"
+    },
+    {
+      "name": "adolescent_parent_communication",
+      "description": "青春期亲子沟通 Agent",
+      "skill_folder": "skills/35_adolescent_parent_communication",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/35_adolescent_parent_communication/schemas/input.schema.json",
+      "output_schema": "skills/35_adolescent_parent_communication/schemas/output.schema.json"
+    },
+    {
+      "name": "family_schedule_manager",
+      "description": "家庭日程管理 Agent",
+      "skill_folder": "skills/36_family_schedule_manager",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/36_family_schedule_manager/schemas/input.schema.json",
+      "output_schema": "skills/36_family_schedule_manager/schemas/output.schema.json"
+    },
+    {
+      "name": "child_nutrition_meal_planner",
+      "description": "儿童营养餐 Agent",
+      "skill_folder": "skills/37_child_nutrition_meal_planner",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/37_child_nutrition_meal_planner/schemas/input.schema.json",
+      "output_schema": "skills/37_child_nutrition_meal_planner/schemas/output.schema.json"
+    },
+    {
+      "name": "family_grocery_list",
+      "description": "家庭买菜清单 Agent",
+      "skill_folder": "skills/38_family_grocery_list",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/38_family_grocery_list/schemas/input.schema.json",
+      "output_schema": "skills/38_family_grocery_list/schemas/output.schema.json"
+    },
+    {
+      "name": "family_travel_planner",
+      "description": "亲子旅行规划 Agent",
+      "skill_folder": "skills/39_family_travel_planner",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/39_family_travel_planner/schemas/input.schema.json",
+      "output_schema": "skills/39_family_travel_planner/schemas/output.schema.json"
+    },
+    {
+      "name": "weekend_family_activity",
+      "description": "周末亲子活动 Agent",
+      "skill_folder": "skills/40_weekend_family_activity",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/40_weekend_family_activity/schemas/input.schema.json",
+      "output_schema": "skills/40_weekend_family_activity/schemas/output.schema.json"
+    },
+    {
+      "name": "family_photo_organizer",
+      "description": "家庭照片整理 Agent",
+      "skill_folder": "skills/41_family_photo_organizer",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/41_family_photo_organizer/schemas/input.schema.json",
+      "output_schema": "skills/41_family_photo_organizer/schemas/output.schema.json"
+    },
+    {
+      "name": "child_growth_archive",
+      "description": "儿童成长档案 Agent",
+      "skill_folder": "skills/42_child_growth_archive",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/42_child_growth_archive/schemas/input.schema.json",
+      "output_schema": "skills/42_child_growth_archive/schemas/output.schema.json"
+    },
+    {
+      "name": "kindergarten_selection",
+      "description": "幼儿园择校 Agent",
+      "skill_folder": "skills/43_kindergarten_selection",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/43_kindergarten_selection/schemas/input.schema.json",
+      "output_schema": "skills/43_kindergarten_selection/schemas/output.schema.json"
+    },
+    {
+      "name": "extracurricular_class_selection",
+      "description": "兴趣班选择 Agent",
+      "skill_folder": "skills/44_extracurricular_class_selection",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/44_extracurricular_class_selection/schemas/input.schema.json",
+      "output_schema": "skills/44_extracurricular_class_selection/schemas/output.schema.json"
+    },
+    {
+      "name": "after_school_class_risk_checker",
+      "description": "课外班避坑 Agent",
+      "skill_folder": "skills/45_after_school_class_risk_checker",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/45_after_school_class_risk_checker/schemas/input.schema.json",
+      "output_schema": "skills/45_after_school_class_risk_checker/schemas/output.schema.json"
+    },
+    {
+      "name": "child_book_recommender",
+      "description": "儿童图书推荐 Agent",
+      "skill_folder": "skills/46_child_book_recommender",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/46_child_book_recommender/schemas/input.schema.json",
+      "output_schema": "skills/46_child_book_recommender/schemas/output.schema.json"
+    },
+    {
+      "name": "child_toy_purchase_advisor",
+      "description": "儿童玩具选购 Agent",
+      "skill_folder": "skills/47_child_toy_purchase_advisor",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/47_child_toy_purchase_advisor/schemas/input.schema.json",
+      "output_schema": "skills/47_child_toy_purchase_advisor/schemas/output.schema.json"
+    },
+    {
+      "name": "family_education_budget_planner",
+      "description": "家庭教育支出规划 Agent",
+      "skill_folder": "skills/48_family_education_budget_planner",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/48_family_education_budget_planner/schemas/input.schema.json",
+      "output_schema": "skills/48_family_education_budget_planner/schemas/output.schema.json"
+    },
+    {
+      "name": "parent_emotion_management",
+      "description": "父母情绪管理 Agent",
+      "skill_folder": "skills/49_parent_emotion_management",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/49_parent_emotion_management/schemas/input.schema.json",
+      "output_schema": "skills/49_parent_emotion_management/schemas/output.schema.json"
+    },
+    {
+      "name": "family_meeting_facilitator",
+      "description": "家庭会议主持 Agent",
+      "skill_folder": "skills/50_family_meeting_facilitator",
+      "entrypoint": "src/runner.py",
+      "input_schema": "skills/50_family_meeting_facilitator/schemas/input.schema.json",
+      "output_schema": "skills/50_family_meeting_facilitator/schemas/output.schema.json"
+    }
+  ]
+}

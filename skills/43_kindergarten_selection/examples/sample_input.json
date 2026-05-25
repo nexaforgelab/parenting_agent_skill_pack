@@ -1,0 +1,30 @@
+{
+  "child_profile": {
+    "age": 3,
+    "nickname": "孩子"
+  },
+  "family_context": {
+    "caregiver": "父母",
+    "available_time": "每天10-20分钟",
+    "budget_range": "5-10万/年",
+    "notes": "示例上下文"
+  },
+  "current_problem": "孩子快到入园年龄，想选择合适的幼儿园。",
+  "goal": "生成可执行计划、择校对比表和实地考察清单",
+  "preferences": {
+    "kindergarten_type": ["公立", "私立"],
+    "location": "近优先",
+    "budget": "5-10万/年"
+  },
+  "kindergartens": [
+    {
+      "name": "示例幼儿园A",
+      "type": "private",
+      "tuition_per_year": 60000,
+      "rating": 4.5,
+      "distance_from_home": 2
+    }
+  ],
+  "history_days": 30,
+  "privacy_mode": "family_local_first"
+}

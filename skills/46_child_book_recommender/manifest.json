@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "child_book_recommender",
+  "skill_index": 46,
+  "name": "儿童图书推荐 Agent",
+  "category": "择校消费与家庭财务",
+  "risk_profile": "consumer_decision",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母买书容易跟风，孩子不一定喜欢。",
+  "long_chain_summary": [
+    "输入年龄、兴趣、阅读水平",
+    "推荐分级书单",
+    "生成共读方法",
+    "记录孩子反馈",
+    "动态调整书单"
+  ],
+  "deliverables": [
+    "个性化书单",
+    "阅读路线",
+    "购买优先级"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做信息整理、对比和风险提示，不替家长做最终消费决定。",
+    "涉及价格、招生名额、合同条款、机构资质、口碑等信息时，应要求人工核验最新资料。",
+    "输出应区分事实、推断、主观偏好和待核验项，避免夸大承诺。"
+  ],
+  "tags": [
+    "择校消费与家庭财务",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

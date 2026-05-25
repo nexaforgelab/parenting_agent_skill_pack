@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "parent_child_conflict_review",
+  "skill_index": 32,
+  "name": "亲子冲突复盘 Agent",
+  "category": "家长沟通与升学规划",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "家长和孩子经常因为作业、手机、成绩吵架。",
+  "long_chain_summary": [
+    "家长记录事件",
+    "Agent 拆解触发点、情绪、需求",
+    "给出复盘问题",
+    "生成下次沟通话术",
+    "跟踪执行效果"
+  ],
+  "deliverables": [
+    "冲突复盘表",
+    "沟通方案",
+    "家庭规则建议"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "家长沟通与升学规划",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

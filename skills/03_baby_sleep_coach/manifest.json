@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "baby_sleep_coach",
+  "skill_index": 3,
+  "name": "宝宝睡眠陪跑 Agent",
+  "category": "婴幼儿照护与健康记录",
+  "risk_profile": "health_adjacent",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "宝宝入睡困难、频繁夜醒、抱睡严重。",
+  "long_chain_summary": [
+    "输入月龄和睡眠问题",
+    "记录入睡方式、夜醒次数、白天小睡",
+    "分析睡眠窗口",
+    "生成温和调整方案",
+    "每晚记录执行效果",
+    "动态调整"
+  ],
+  "deliverables": [
+    "睡眠日志",
+    "入睡流程",
+    "夜醒原因分析",
+    "阶段报告"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做家庭记录、观察整理、提醒和沟通材料准备，不提供诊断、治疗方案或用药建议。",
+    "出现呼吸困难、持续高热、严重过敏反应、精神状态异常、脱水、剧烈呕吐/腹泻、外伤等情况时，必须提示立即联系医生或急救。",
+    "所有月龄、疫苗、营养、睡眠建议都应标注为一般性参考，并要求家长以当地儿科医生/公卫机构建议为准。"
+  ],
+  "tags": [
+    "婴幼儿照护与健康记录",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

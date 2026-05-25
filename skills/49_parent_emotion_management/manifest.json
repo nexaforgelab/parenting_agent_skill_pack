@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "parent_emotion_management",
+  "skill_index": 49,
+  "name": "父母情绪管理 Agent",
+  "category": "父母情绪与家庭治理",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母带娃压力大，经常对孩子发火。",
+  "long_chain_summary": [
+    "记录触发事件",
+    "分析情绪来源",
+    "给出暂停话术和替代表达",
+    "生成复盘问题",
+    "每周统计高压场景"
+  ],
+  "deliverables": [
+    "情绪日志",
+    "亲子沟通建议",
+    "压力场景分析"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "父母情绪与家庭治理",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

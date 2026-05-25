@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "solid_food_planner",
+  "skill_index": 4,
+  "name": "辅食添加规划 Agent",
+  "category": "婴幼儿照护与健康记录",
+  "risk_profile": "health_adjacent",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "宝宝到 6 个月左右开始辅食，父母不知道怎么加。",
+  "long_chain_summary": [
+    "输入宝宝月龄、过敏史、已尝试食材",
+    "生成一周辅食计划",
+    "每次记录接受度和反应",
+    "自动更新可用食材库",
+    "生成购物清单"
+  ],
+  "deliverables": [
+    "每周辅食表",
+    "食材尝试记录",
+    "过敏观察表",
+    "采购清单"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做家庭记录、观察整理、提醒和沟通材料准备，不提供诊断、治疗方案或用药建议。",
+    "出现呼吸困难、持续高热、严重过敏反应、精神状态异常、脱水、剧烈呕吐/腹泻、外伤等情况时，必须提示立即联系医生或急救。",
+    "所有月龄、疫苗、营养、睡眠建议都应标注为一般性参考，并要求家长以当地儿科医生/公卫机构建议为准。"
+  ],
+  "tags": [
+    "婴幼儿照护与健康记录",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

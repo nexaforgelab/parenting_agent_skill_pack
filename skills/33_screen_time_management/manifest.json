@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "screen_time_management",
+  "skill_index": 33,
+  "name": "手机使用管理 Agent",
+  "category": "家长沟通与升学规划",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子沉迷手机，父母只会强制没收。",
+  "long_chain_summary": [
+    "记录孩子使用时间和应用类型",
+    "分析使用动机",
+    "和孩子共创规则",
+    "设置奖励机制",
+    "每周复盘执行"
+  ],
+  "deliverables": [
+    "手机使用协议",
+    "替代活动清单",
+    "复盘报告"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "家长沟通与升学规划",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

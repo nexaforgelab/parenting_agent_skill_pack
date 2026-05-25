@@ -1,0 +1,30 @@
+{
+  "child_profile": {
+    "age": 3,
+    "nickname": "孩子"
+  },
+  "family_context": {
+    "caregiver": "父母",
+    "available_time": "每天10-20分钟",
+    "notes": "示例上下文"
+  },
+  "current_problem": "孩子照片越来越多，手机相册混乱。",
+  "goal": "生成可执行计划、记录表和一周复盘字段",
+  "raw_records": [
+    {
+      "photo_id": "photo_20240115_001",
+      "timestamp": "2024-01-15",
+      "event": "示例事件",
+      "category": "daily",
+      "location": "家里",
+      "people": ["孩子", "父母"],
+      "tags": ["日常", "亲子"]
+    }
+  ],
+  "preferences": {
+    "tone": "温和",
+    "budget": "低成本优先"
+  },
+  "history_days": 7,
+  "privacy_mode": "family_local_first"
+}

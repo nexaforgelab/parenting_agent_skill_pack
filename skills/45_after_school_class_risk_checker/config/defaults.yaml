@@ -1,0 +1,24 @@
+skill_id: "after_school_class_risk_checker"
+name: "课外班避坑 Agent"
+category: "择校消费与家庭财务"
+language: "zh-CN"
+defaults:
+  history_days: 7
+  review_cycle: "weekly"
+  privacy_mode: "family_local_first"
+  max_daily_actions: 5
+  tone: "温和、具体、低焦虑"
+risk_flags:
+  - "本 Skill 只做信息整理、对比和风险提示，不替家长做最终消费决定。"
+  - "涉及价格、招生名额、合同条款、机构资质、口碑等信息时，应要求人工核验最新资料。"
+  - "输出应区分事实、推断、主观偏好和待核验项，避免夸大承诺。"
+deliverables:
+  - "报名前检查表"
+  - "合同风险点"
+  - "沟通话术"
+workflow_modes:
+  - "记录模式"
+  - "规划模式"
+  - "陪跑模式"
+  - "复盘模式"
+  - "沟通摘要模式"

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "child_nutrition_meal_planner",
+  "skill_index": 37,
+  "name": "儿童营养餐 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "health_adjacent",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母每天不知道给孩子吃什么。",
+  "long_chain_summary": [
+    "输入年龄、忌口、过敏、预算",
+    "生成一周菜单",
+    "自动生成买菜清单",
+    "记录孩子接受度",
+    "下周优化"
+  ],
+  "deliverables": [
+    "一周食谱",
+    "采购清单",
+    "营养搭配说明"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 只做家庭记录、观察整理、提醒和沟通材料准备，不提供诊断、治疗方案或用药建议。",
+    "出现呼吸困难、持续高热、严重过敏反应、精神状态异常、脱水、剧烈呕吐/腹泻、外伤等情况时，必须提示立即联系医生或急救。",
+    "所有月龄、疫苗、营养、睡眠建议都应标注为一般性参考，并要求家长以当地儿科医生/公卫机构建议为准。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

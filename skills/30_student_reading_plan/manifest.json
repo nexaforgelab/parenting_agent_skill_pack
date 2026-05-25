@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "student_reading_plan",
+  "skill_index": 30,
+  "name": "小学生阅读计划 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母想培养阅读习惯，但不知道读什么、怎么读。",
+  "long_chain_summary": [
+    "输入年龄、兴趣、阅读水平",
+    "推荐书单",
+    "生成阅读计划",
+    "每本书生成讨论问题",
+    "记录读后感"
+  ],
+  "deliverables": [
+    "分级书单",
+    "阅读打卡",
+    "读后感模板"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

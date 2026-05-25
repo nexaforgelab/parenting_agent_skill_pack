@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "primary_english_vocabulary",
+  "skill_index": 29,
+  "name": "小学英语单词 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "小学生背单词容易忘。",
+  "long_chain_summary": [
+    "导入课本单词",
+    "每天学习",
+    "听音辨词",
+    "拼写测试",
+    "错词复习",
+    "生成掌握度"
+  ],
+  "deliverables": [
+    "单词卡",
+    "错词本",
+    "复习计划"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "focus_training",
+  "skill_index": 17,
+  "name": "专注力训练 Agent",
+  "category": "启蒙教育、行为习惯与安全",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "孩子坐不住、做事容易分心。",
+  "long_chain_summary": [
+    "记录孩子年龄和专注场景",
+    "设计 5-15 分钟训练任务",
+    "计时执行",
+    "记录中断次数",
+    "每周生成专注力趋势"
+  ],
+  "deliverables": [
+    "专注训练计划",
+    "打卡表",
+    "进步报告"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "启蒙教育、行为习惯与安全",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

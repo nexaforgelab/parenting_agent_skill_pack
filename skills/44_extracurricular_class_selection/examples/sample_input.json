@@ -1,0 +1,33 @@
+{
+  "child_profile": {
+    "age": 5,
+    "nickname": "孩子",
+    "interests": ["音乐", "绘画"],
+    "personality": "活泼好动"
+  },
+  "family_context": {
+    "caregiver": "父母",
+    "available_time": "周末有空",
+    "budget": "2-5千/月",
+    "notes": "示例上下文"
+  },
+  "current_problem": "想给孩子报兴趣班，不知道如何选择。",
+  "goal": "生成可执行计划、兴趣班对比表和试课评估清单",
+  "preferences": {
+    "budget_range": "2-5千/月",
+    "hours_per_week": 3,
+    "class_type": ["艺术类", "体育类"]
+  },
+  "classes": [
+    {
+      "name": "示例兴趣班A",
+      "type": "艺术类",
+      "tuition_per_month": 3000,
+      "hours_per_week": 2,
+      "rating": 4.5,
+      "related_interests": ["音乐", "绘画"]
+    }
+  ],
+  "history_days": 30,
+  "privacy_mode": "family_local_first"
+}

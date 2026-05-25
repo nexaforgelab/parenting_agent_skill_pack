@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "family_meeting_facilitator",
+  "skill_index": 50,
+  "name": "家庭会议主持 Agent",
+  "category": "父母情绪与家庭治理",
+  "risk_profile": "family_relationship",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "家庭规则总是父母单方面制定，孩子不配合。",
+  "long_chain_summary": [
+    "输入家庭议题：手机、作业、睡觉、零花钱",
+    "Agent 生成会议流程",
+    "引导每个人表达",
+    "形成家庭协议",
+    "定期复盘"
+  ],
+  "deliverables": [
+    "家庭会议纪要",
+    "家庭规则协议",
+    "执行追踪表"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 用于家庭沟通、情绪复盘和非临床自我管理，不提供心理诊断或治疗。",
+    "涉及自伤、伤人、家暴、严重抑郁、持续失控等高风险情境时，应提示寻求专业帮助或紧急支持。",
+    "所有话术应低评判、低羞辱、鼓励共情和边界，不制造亲子对立。"
+  ],
+  "tags": [
+    "父母情绪与家庭治理",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

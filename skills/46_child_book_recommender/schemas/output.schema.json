@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ParentingSkillOutput",
+  "type": "object",
+  "required": [
+    "skill_id",
+    "summary",
+    "known_facts",
+    "analysis",
+    "action_plan",
+    "deliverables",
+    "risk_notes",
+    "next_tracking_fields"
+  ],
+  "properties": {
+    "skill_id": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "analysis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_plan": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "deliverables": {
+      "type": "object"
+    },
+    "risk_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_tracking_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "markdown_report": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

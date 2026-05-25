@@ -1,0 +1,24 @@
+skill_id: "family_travel_planner"
+name: "亲子旅行规划 Agent"
+category: "家庭运营与成长档案"
+language: "zh-CN"
+defaults:
+  history_days: 7
+  review_cycle: "weekly"
+  privacy_mode: "family_local_first"
+  max_daily_actions: 5
+  tone: "温和、具体、低焦虑"
+risk_flags:
+  - "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。"
+  - "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。"
+  - "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+deliverables:
+  - "亲子行程"
+  - "行李清单"
+  - "应急联系人清单"
+workflow_modes:
+  - "记录模式"
+  - "规划模式"
+  - "陪跑模式"
+  - "复盘模式"
+  - "沟通摘要模式"

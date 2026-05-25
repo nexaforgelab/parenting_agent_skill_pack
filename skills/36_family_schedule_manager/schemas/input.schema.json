@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ParentingSkillInput",
+  "type": "object",
+  "required": [
+    "child_profile",
+    "current_problem"
+  ],
+  "properties": {
+    "child_profile": {
+      "type": "object",
+      "description": "孩子年龄/月龄、关键背景、可匿名化名称等。"
+    },
+    "family_context": {
+      "type": "object",
+      "description": "照护人、家庭节奏、预算、城市、学校/教材等上下文。"
+    },
+    "current_problem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string"
+    },
+    "raw_records": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "preferences": {
+      "type": "object"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "history_days": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 7
+    },
+    "privacy_mode": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "anonymous",
+        "family_local_first"
+      ],
+      "default": "family_local_first"
+    }
+  },
+  "additionalProperties": true
+}

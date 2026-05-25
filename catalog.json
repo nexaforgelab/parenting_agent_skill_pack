@@ -1,0 +1,402 @@
+[
+  {
+    "index": 1,
+    "folder": "skills/01_newborn_feeding_tracker",
+    "skill_id": "newborn_feeding_tracker",
+    "name": "新生儿喂养记录 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 2,
+    "folder": "skills/02_baby_routine_builder",
+    "skill_id": "baby_routine_builder",
+    "name": "宝宝作息规律培养 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 3,
+    "folder": "skills/03_baby_sleep_coach",
+    "skill_id": "baby_sleep_coach",
+    "name": "宝宝睡眠陪跑 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 4,
+    "folder": "skills/04_solid_food_planner",
+    "skill_id": "solid_food_planner",
+    "name": "辅食添加规划 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 5,
+    "folder": "skills/05_baby_allergy_food_log",
+    "skill_id": "baby_allergy_food_log",
+    "name": "宝宝过敏食材记录 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 6,
+    "folder": "skills/06_development_milestone_tracker",
+    "skill_id": "development_milestone_tracker",
+    "name": "月龄发育里程碑 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 7,
+    "folder": "skills/07_vaccination_reminder",
+    "skill_id": "vaccination_reminder",
+    "name": "疫苗接种提醒 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 8,
+    "folder": "skills/08_well_child_checkup_manager",
+    "skill_id": "well_child_checkup_manager",
+    "name": "宝宝体检记录管理 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 9,
+    "folder": "skills/09_baby_crying_troubleshooter",
+    "skill_id": "baby_crying_troubleshooter",
+    "name": "宝宝哭闹原因排查 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 10,
+    "folder": "skills/10_diaper_formula_inventory",
+    "skill_id": "diaper_formula_inventory",
+    "name": "尿布奶粉库存 Agent",
+    "category": "婴幼儿照护与健康记录",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 11,
+    "folder": "skills/11_picture_book_reading",
+    "skill_id": "picture_book_reading",
+    "name": "绘本共读 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 12,
+    "folder": "skills/12_bedtime_story_generator",
+    "skill_id": "bedtime_story_generator",
+    "name": "睡前故事生成 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 13,
+    "folder": "skills/13_preschool_chinese_literacy",
+    "skill_id": "preschool_chinese_literacy",
+    "name": "幼儿识字启蒙 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 14,
+    "folder": "skills/14_pinyin_phonics_starter",
+    "skill_id": "pinyin_phonics_starter",
+    "name": "拼音启蒙 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 15,
+    "folder": "skills/15_preschool_english_starter",
+    "skill_id": "preschool_english_starter",
+    "name": "幼儿英语启蒙 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 16,
+    "folder": "skills/16_preschool_math_sense",
+    "skill_id": "preschool_math_sense",
+    "name": "幼儿数学启蒙 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 17,
+    "folder": "skills/17_focus_training",
+    "skill_id": "focus_training",
+    "name": "专注力训练 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 18,
+    "folder": "skills/18_toddler_emotion_labeling",
+    "skill_id": "toddler_emotion_labeling",
+    "name": "幼儿情绪识别 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 19,
+    "folder": "skills/19_habit_builder",
+    "skill_id": "habit_builder",
+    "name": "幼儿习惯养成 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 20,
+    "folder": "skills/20_child_safety_education",
+    "skill_id": "child_safety_education",
+    "name": "儿童安全教育 Agent",
+    "category": "启蒙教育、行为习惯与安全",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 21,
+    "folder": "skills/21_primary_homework_companion",
+    "skill_id": "primary_homework_companion",
+    "name": "小学作业陪伴 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 22,
+    "folder": "skills/22_primary_mistake_notebook",
+    "skill_id": "primary_mistake_notebook",
+    "name": "小学错题本 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 23,
+    "folder": "skills/23_primary_math_word_problem",
+    "skill_id": "primary_math_word_problem",
+    "name": "小学数学应用题 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 24,
+    "folder": "skills/24_mental_arithmetic_trainer",
+    "skill_id": "mental_arithmetic_trainer",
+    "name": "小学口算训练 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 25,
+    "folder": "skills/25_picture_writing_coach",
+    "skill_id": "picture_writing_coach",
+    "name": "小学看图写话 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 26,
+    "folder": "skills/26_primary_composition_coach",
+    "skill_id": "primary_composition_coach",
+    "name": "小学作文陪练 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 27,
+    "folder": "skills/27_primary_chinese_reading_comprehension",
+    "skill_id": "primary_chinese_reading_comprehension",
+    "name": "小学语文阅读理解 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 28,
+    "folder": "skills/28_classical_poem_recitation_checker",
+    "skill_id": "classical_poem_recitation_checker",
+    "name": "古诗背诵检查 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 29,
+    "folder": "skills/29_primary_english_vocabulary",
+    "skill_id": "primary_english_vocabulary",
+    "name": "小学英语单词 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 30,
+    "folder": "skills/30_student_reading_plan",
+    "skill_id": "student_reading_plan",
+    "name": "小学生阅读计划 Agent",
+    "category": "小学学习陪伴",
+    "risk_profile": "education"
+  },
+  {
+    "index": 31,
+    "folder": "skills/31_parent_tutoring_phrases",
+    "skill_id": "parent_tutoring_phrases",
+    "name": "家长辅导话术 Agent",
+    "category": "家长沟通与升学规划",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 32,
+    "folder": "skills/32_parent_child_conflict_review",
+    "skill_id": "parent_child_conflict_review",
+    "name": "亲子冲突复盘 Agent",
+    "category": "家长沟通与升学规划",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 33,
+    "folder": "skills/33_screen_time_management",
+    "skill_id": "screen_time_management",
+    "name": "手机使用管理 Agent",
+    "category": "家长沟通与升学规划",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 34,
+    "folder": "skills/34_middle_school_exam_goal_breakdown",
+    "skill_id": "middle_school_exam_goal_breakdown",
+    "name": "中考目标拆解 Agent",
+    "category": "家长沟通与升学规划",
+    "risk_profile": "education"
+  },
+  {
+    "index": 35,
+    "folder": "skills/35_adolescent_parent_communication",
+    "skill_id": "adolescent_parent_communication",
+    "name": "青春期亲子沟通 Agent",
+    "category": "家长沟通与升学规划",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 36,
+    "folder": "skills/36_family_schedule_manager",
+    "skill_id": "family_schedule_manager",
+    "name": "家庭日程管理 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 37,
+    "folder": "skills/37_child_nutrition_meal_planner",
+    "skill_id": "child_nutrition_meal_planner",
+    "name": "儿童营养餐 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "health_adjacent"
+  },
+  {
+    "index": 38,
+    "folder": "skills/38_family_grocery_list",
+    "skill_id": "family_grocery_list",
+    "name": "家庭买菜清单 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 39,
+    "folder": "skills/39_family_travel_planner",
+    "skill_id": "family_travel_planner",
+    "name": "亲子旅行规划 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 40,
+    "folder": "skills/40_weekend_family_activity",
+    "skill_id": "weekend_family_activity",
+    "name": "周末亲子活动 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 41,
+    "folder": "skills/41_family_photo_organizer",
+    "skill_id": "family_photo_organizer",
+    "name": "家庭照片整理 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 42,
+    "folder": "skills/42_child_growth_archive",
+    "skill_id": "child_growth_archive",
+    "name": "儿童成长档案 Agent",
+    "category": "家庭运营与成长档案",
+    "risk_profile": "general_parenting"
+  },
+  {
+    "index": 43,
+    "folder": "skills/43_kindergarten_selection",
+    "skill_id": "kindergarten_selection",
+    "name": "幼儿园择校 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 44,
+    "folder": "skills/44_extracurricular_class_selection",
+    "skill_id": "extracurricular_class_selection",
+    "name": "兴趣班选择 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 45,
+    "folder": "skills/45_after_school_class_risk_checker",
+    "skill_id": "after_school_class_risk_checker",
+    "name": "课外班避坑 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 46,
+    "folder": "skills/46_child_book_recommender",
+    "skill_id": "child_book_recommender",
+    "name": "儿童图书推荐 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 47,
+    "folder": "skills/47_child_toy_purchase_advisor",
+    "skill_id": "child_toy_purchase_advisor",
+    "name": "儿童玩具选购 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 48,
+    "folder": "skills/48_family_education_budget_planner",
+    "skill_id": "family_education_budget_planner",
+    "name": "家庭教育支出规划 Agent",
+    "category": "择校消费与家庭财务",
+    "risk_profile": "consumer_decision"
+  },
+  {
+    "index": 49,
+    "folder": "skills/49_parent_emotion_management",
+    "skill_id": "parent_emotion_management",
+    "name": "父母情绪管理 Agent",
+    "category": "父母情绪与家庭治理",
+    "risk_profile": "family_relationship"
+  },
+  {
+    "index": 50,
+    "folder": "skills/50_family_meeting_facilitator",
+    "skill_id": "family_meeting_facilitator",
+    "name": "家庭会议主持 Agent",
+    "category": "父母情绪与家庭治理",
+    "risk_profile": "family_relationship"
+  }
+]

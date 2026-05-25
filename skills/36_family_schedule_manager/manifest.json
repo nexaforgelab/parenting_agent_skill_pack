@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "family_schedule_manager",
+  "skill_index": 36,
+  "name": "家庭日程管理 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "家庭成员日程混乱，接送、课程、体检、活动容易冲突。",
+  "long_chain_summary": [
+    "导入家人日程",
+    "识别接送、课程、会议、体检",
+    "自动排程",
+    "冲突提醒",
+    "每天生成家庭日程卡"
+  ],
+  "deliverables": [
+    "家庭日历",
+    "接送提醒",
+    "冲突清单"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

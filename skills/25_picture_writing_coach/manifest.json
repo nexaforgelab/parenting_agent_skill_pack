@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "picture_writing_coach",
+  "skill_index": 25,
+  "name": "小学看图写话 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "低年级孩子看图写话不会展开。",
+  "long_chain_summary": [
+    "上传图片",
+    "引导观察人物、地点、动作、心情",
+    "生成提问",
+    "孩子口述",
+    "Agent 整理成作文",
+    "给出修改建议"
+  ],
+  "deliverables": [
+    "看图写话稿",
+    "观察清单",
+    "表达提升建议"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

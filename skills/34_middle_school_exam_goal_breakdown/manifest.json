@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "middle_school_exam_goal_breakdown",
+  "skill_index": 34,
+  "name": "中考目标拆解 Agent",
+  "category": "家长沟通与升学规划",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "初三家长想帮孩子提分，但不知道各科怎么分配。",
+  "long_chain_summary": [
+    "输入当前成绩和目标高中",
+    "估算分数差距",
+    "分科拆解提分空间",
+    "制定月计划",
+    "每次模考后调整"
+  ],
+  "deliverables": [
+    "提分路线图",
+    "每月计划",
+    "模考复盘"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "家长沟通与升学规划",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

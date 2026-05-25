@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "family_travel_planner",
+  "skill_index": 39,
+  "name": "亲子旅行规划 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "带娃旅行要考虑安全、休息、厕所、餐饮、节奏。",
+  "long_chain_summary": [
+    "输入目的地、孩子年龄、天数、预算",
+    "规划低强度行程",
+    "安排午睡和用餐",
+    "生成行李清单",
+    "输出应急预案"
+  ],
+  "deliverables": [
+    "亲子行程",
+    "行李清单",
+    "应急联系人清单"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "preschool_english_starter",
+  "skill_index": 15,
+  "name": "幼儿英语启蒙 Agent",
+  "category": "启蒙教育、行为习惯与安全",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "父母想做英语启蒙，但不知道从儿歌、单词还是绘本开始。",
+  "long_chain_summary": [
+    "输入年龄和英语基础",
+    "生成每日 10 分钟启蒙计划",
+    "推荐单词、句型、绘本、儿歌",
+    "语音跟读",
+    "记录掌握情况"
+  ],
+  "deliverables": [
+    "英语启蒙路线",
+    "每日任务",
+    "亲子对话脚本"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "启蒙教育、行为习惯与安全",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

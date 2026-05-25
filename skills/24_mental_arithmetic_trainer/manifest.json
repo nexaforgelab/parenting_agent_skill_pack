@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "mental_arithmetic_trainer",
+  "skill_index": 24,
+  "name": "小学口算训练 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "口算每天要练，但家长出题批改很麻烦。",
+  "long_chain_summary": [
+    "设置年级和题型",
+    "自动生成口算题",
+    "限时答题",
+    "自动批改",
+    "统计正确率和速度",
+    "生成薄弱题型"
+  ],
+  "deliverables": [
+    "每日口算卷",
+    "错题统计",
+    "速度曲线"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "primary_mistake_notebook",
+  "skill_index": 22,
+  "name": "小学错题本 Agent",
+  "category": "小学学习陪伴",
+  "risk_profile": "education",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "错题散落在作业、试卷、练习册里。",
+  "long_chain_summary": [
+    "拍照上传错题",
+    "OCR 识别",
+    "判断学科和知识点",
+    "自动生成解析",
+    "分类归档",
+    "定期生成复习题"
+  ],
+  "deliverables": [
+    "错题本",
+    "知识点标签",
+    "复习计划"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 以启发式陪练为主，避免直接替孩子完成作业或代写成品。",
+    "输出应包含引导问题、解题路径、错因分析和复习建议，保留孩子自主思考过程。",
+    "涉及教材、地区考试政策或校内要求时，应提示以学校老师最新要求为准。"
+  ],
+  "tags": [
+    "小学学习陪伴",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}

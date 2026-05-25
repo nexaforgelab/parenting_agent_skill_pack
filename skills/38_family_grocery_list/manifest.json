@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "skill_id": "family_grocery_list",
+  "skill_index": 38,
+  "name": "家庭买菜清单 Agent",
+  "category": "家庭运营与成长档案",
+  "risk_profile": "general_parenting",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "description": "每周买菜容易重复、浪费。",
+  "long_chain_summary": [
+    "根据家庭人数和菜单",
+    "生成采购清单",
+    "按超市区域分类",
+    "记录库存",
+    "提醒快过期食材"
+  ],
+  "deliverables": [
+    "买菜清单",
+    "库存表",
+    "减少浪费建议"
+  ],
+  "entrypoint": "src/runner.py",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "safety_boundary": [
+    "本 Skill 提供家庭教育和生活管理建议，不替代专业人士意见。",
+    "涉及安全、法律、医疗、财务或教育政策时，应提示家长二次核验。",
+    "输出应尊重家庭差异，不用单一标准评价孩子或父母。"
+  ],
+  "tags": [
+    "家庭运营与成长档案",
+    "parenting",
+    "family",
+    "long-running-agent"
+  ],
+  "compatible_agents": [
+    "OpenClaw",
+    "Hermes",
+    "generic-agent-runtime"
+  ]
+}
